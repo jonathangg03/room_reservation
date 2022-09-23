@@ -22,12 +22,15 @@ h1 {
   font-size: 3.5rem;
   text-align: center;
   padding-bottom: 40px;
+  display: none;
 }
 
 .company {
   outline: var(--outline-main);
   position: relative;
-  width: 100%;
+  width: 1311px;
+  margin: 0 auto;
+  display: block;
   height: 550px;
 }
 
@@ -46,12 +49,12 @@ h1 {
   justify-content: center;
   bottom: -25px;
   background-color: white;
-  right: calc(50% - 100px);
+  left: 308px;
 }
 
 .irazu {
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 170px;
   bottom: 0;
 }
 
@@ -61,4 +64,135 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+.irazu .content p {
+  outline: var(--outline-main);
+  padding: 10px 17px;
+  border-radius: 5px;
+}
+
+.irazu__sofa {
+  width: 130px;
+  height: 42px;
+  position: absolute;
+  top: 10px;
+  right: calc(50% - 65px);
+}
+
+.irazu__sofa-items {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.seat {
+  position: absolute;
+  border: var(--outline-main);
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.seat.a {
+  top: 0;
+  left: 0;
+  border-right: 0;
+}
+
+.seat.b {
+  top: 0;
+  right: 0;
+  border-left: 0;
+}
+
+.back {
+  border: var(--outline-main);
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: -5px;
+}
+
+.arm {
+  height: 100%;
+  border: var(--outline-main);
+  width: 15px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.arm.a {
+  left: 0;
+}
+
+.arm.b {
+  right: 0;
+}
+
+.irazu__chairs {
+  /* outline: var(--outline-main); */
+  width: 170px;
+  height: 35px;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 85px);
+}
+
+.irazu__chair {
+  outline: var(--outline-main);
+  width: 33px;
+  height: 27px;
+  top: 0;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.irazu__chair.a {
+  left: 20px;
+  bottom: 20px;
+  transform: rotate(20deg);
+}
+
+.irazu__chair.b {
+  right: 20px;
+  bottom: 20px;
+  transform: rotate(-20deg);
+}
+
+.irazu__chair-items {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.irazu__chair-arm {
+  outline: var(--outline-main);
+  width: 4.5px;
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.irazu__chair-arm.a {
+  left: 0;
+}
+
+.irazu__chair-arm.b {
+  right: 0;
+}
+
+.irazu__chair-back {
+  outline: var(--outline-main);
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 2px;
+  background-color: white;
 }
