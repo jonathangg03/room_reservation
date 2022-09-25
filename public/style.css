@@ -36,7 +36,7 @@ h1 {
 
 .room {
   outline: var(--outline-main);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   position: absolute;
 }
@@ -58,7 +58,8 @@ h1 {
   bottom: 0;
 }
 
-.irazu .content {
+.irazu .content,
+.poas .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,4 +196,66 @@ h1 {
   width: 100%;
   border-radius: 2px;
   background-color: white;
+}
+
+.poas {
+  width: 300px;
+  height: 380px;
+  top: 0;
+  position: relative;
+}
+
+.board {
+  outline: var(--outline-main);
+  align-self: flex-start;
+  margin-top: 8px;
+  width: 180px;
+  height: 6px;
+  display: block;
+  border-radius: 1px;
+}
+
+.poas__table-container {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.poas__chair-container {
+  outline: var(--outline-main);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.poas__table {
+  outline: var(--outline-main);
+  height: 100%;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.irazu__chair-items.left {
+  transform: rotateZ(90deg);
+}
+
+.irazu__chair-items.right {
+  transform: rotateZ(-90deg);
+}
+
+.table__onside {
+  border: var(--outline-main);
+  border-bottom: none;
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 250px;
+  border-radius: 5px 5px 0 0;
 }
